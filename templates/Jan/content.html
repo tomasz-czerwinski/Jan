@@ -1,0 +1,115 @@
+{% extends "Jan/base.html" %}
+{% load i18n %}
+
+{% block script %}
+<script>
+    
+request=new XMLHttpRequest();
+
+function processResponse()
+{
+    if (request.readyState==4 && request.status==200) 
+        {document.getElementById("faults").innerHTML=request.responseText;}
+}
+
+
+function loadFaultList()
+{
+    request.onreadystatechange=processResponse()
+    request.open("GET","/Jan/api/faults?branch={{context.branch.name}}&location={{context.content.fault_log_location}}&revision={{context.content.fault_log_end}}",true);
+
+    request.send();
+}
+
+window.onload=loadFaultList();
+
+</script>
+
+{% endblock script %}
+
+{% block navigation %}
+    {%include "Jan/navigation.html"%}
+{% endblock %}
+
+
+
+{% block system-message %}
+   {% trans "System message" %} 
+{% endblock %}
+
+{% block description %} 
+    Description 
+{% endblock description %}
+
+
+{% block dashboard  %}
+
+    <h2>{% trans "Fault corrections / new features information for compilation:" %} </h2>
+    {% trans "Log location:" %} <a href="{{context.content.fault_log_location}}">{{context.content.fault_log_location}}</a> <br>  
+    {% trans "Log range:" %} {{context.content.fault_log_start}} - {{context.content.fault_log_end}} <br>  
+    <hr>
+    {%for fault in context.faults %}
+       {% trans "Pronto Id:" %} {{fault.pronto}} <br>
+       {% trans "Pronto description:" %}  {{fault.description }} <br>
+       {% trans "Responsible person:" %} {{ fault.info }} <br>
+       {% trans "Is partial correction from developer p.o.v:" %} {{ fault.partial }} <br>
+       {% trans "Change set revision" %} {{ fault.revision }}  <br>                                                                               
+       -<br> 
+    
+    {%endfor%}
+
+    <h2>{% trans "Fault information for delivery: (since latest delivered version)" %} </h2>
+    <hr>
+    <div id="faults">
+        <button type="button" onclick="loadFaultList()"> 
+            {% trans "Show faults between" %} {{context.branch.latest_fault_log_end}} - {{context.content.fault_log_end}} 
+        </button>
+    </div>
+
+
+    <h2>{% trans "Delivery information:" %} </h2>
+    <hr>
+
+    {% trans "Component:" %} {{context.branch.component}} <br>
+    {% trans "Branch name:" %} {{context.branch.name}} <br>    
+    {% trans "Lastest delivered revision:" %} {{context.branch.latest_delivered_revision}} <br>  
+    {% trans "Will be delivered from location:" %}      
+        <ul>
+            {%for queue_item in context.queue_items %}
+                <li><a href="{{queue_item.from_location}}">{{queue_item.from_location}}</a>
+            {% endfor %}
+        </ul>
+    {% trans "Will be delivered to location(s):" %} 
+        <ul>
+            {%for delivery_location in context.delivery_locations %}
+                <li><a href="{{delivery_location.to_location}}">{{delivery_location.to_location}}</a>   
+            {% endfor %}
+        </ul>
+
+    <h2>{% trans "SCM information:" %} </h2>
+    <hr>
+   
+    {% trans "System:" %} {{context.content.system}} <br>      
+    {% trans "Name:" %} {{context.content.name}} <br>    
+    {% trans "Compilation date:" %} {{context.content.compilation_date}} <br>
+    {% trans "Source code location:" %} <a href="{{context.content.location}}">{{context.content.location}}</a> <br>    
+    {% trans "Source code revision:" %} {{context.content.revision}} <br>
+    {% trans "Release note location:" %} <a href="{{context.content.content_note_link}}">{{context.content.content_note_link}}</a> <br>  
+
+    {% trans "Baselines:" %}<br>
+    {%for baseline in context.baselines%}
+        {{baseline.baseline}} <br>
+    {%endfor%}
+
+    {% trans "Externals:" %}<br>
+    {%for external in context.externals%}
+        {{external.external}} <br>
+    {%endfor%}
+
+
+{% endblock dashboard  %}
+
+
+{% block footer %}
+{% endblock footer %}
+

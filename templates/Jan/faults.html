@@ -1,0 +1,19 @@
+{% load i18n %}
+
+
+<!--
+SVN Log: <br>
+{%for message in context.messages %}
+    {{message}} <br>
+{%endfor%}
+-->
+
+{%for fault in context.faults %}
+    {% trans "Pronto Id:" %} {{fault.pronto}} <br>
+    {% trans "Pronto description:" %}  {{fault.description }} <br>
+    {% trans "Responsible person:" %} {{ fault.info }} <br>
+    {% trans "Is partial correction from developer p.o.v:" %} {{ fault.partial }} <br>
+    {% trans "Change set revision" %} {{ fault.revision }}  <br>                                                                               
+    -<br> 
+{%endfor%}
+

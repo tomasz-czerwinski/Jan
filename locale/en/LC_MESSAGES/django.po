@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-06-25 22:32+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: templates/ContactCenter/form.html:20
+msgid "Wyslij"
+msgstr "Send"
+
+#: templates/ContactCenter/thanksForYourMail.html:16
+msgid "Wróć"
+msgstr "Back"
+
+#: templates/Jan/base.html:41
+msgid "log in"
+msgstr "log in"
+
+#: templates/Jan/content.html:9 templates/Jan/index.html:9
+msgid "Some configuration option"
+msgstr "Some configuration option"
+
+#: templates/Jan/content.html:14 templates/Jan/index.html:14
+msgid "Another configuration option"
+msgstr "Another configuration option"
+
+#: templates/Jan/content.html:19 templates/Jan/index.html:19
+msgid "Views definitions"
+msgstr "Views definitions"
+
+#: templates/Jan/content.html:28
+msgid "System message"
+msgstr "System message"
+
+#: templates/Jan/content.html:38
+msgid "Fault corrections / new features information for compilation:"
+msgstr "Fault corrections / new features information for compilation:"
+
+#: templates/Jan/content.html:41
+msgid "Pronto Id:"
+msgstr "Pronto Id:"
+
+#: templates/Jan/content.html:42
+msgid "Pronto description:"
+msgstr "Pronto description:"
+
+#: templates/Jan/content.html:43
+msgid "Responsible person:"
+msgstr "Responsible person:"
+
+#: templates/Jan/content.html:44
+msgid "Is partial correction from developer p.o.v:"
+msgstr "Is partial correction from developer p.o.v:"
+
+#: templates/Jan/content.html:45
+msgid "Change set revision"
+msgstr "Change set revision"
+
+#: templates/Jan/content.html:52
+msgid "T.B.D"
+msgstr "T.B.D"
+
+#: templates/Jan/content.html:53
+msgid "Delivery information:"
+msgstr "Delivery information:"
+
+#: templates/Jan/content.html:56
+msgid "Component:"
+msgstr "Component:"
+
+#: templates/Jan/content.html:57
+msgid "Branch name:"
+msgstr "Branch name:"
+
+#: templates/Jan/content.html:58
+msgid "Lastest delivered revision:"
+msgstr "Lastest delivered revision:"
+
+#: templates/Jan/content.html:59
+msgid "Will be delivered from location:"
+msgstr "Will be delivered from location:"
+
+#: templates/Jan/content.html:60
+msgid "Will be delivered to location:"
+msgstr "Will be delivered to location:"
+
+#: templates/Jan/content.html:62
+msgid "SCM information:"
+msgstr "SCM information:"
+
+#: templates/Jan/content.html:65
+msgid "System:"
+msgstr "System:"
+
+#: templates/Jan/content.html:66
+msgid "Name:"
+msgstr "Name:"
+
+#: templates/Jan/content.html:67
+msgid "Source code location:"
+msgstr "Source code location:"
+
+#: templates/Jan/content.html:68
+msgid "Source code revision:"
+msgstr "Source code revision:"
+
+#: templates/Jan/content.html:69
+msgid "Compilation date:"
+msgstr "Compilation date:"
+
+#: templates/Jan/content.html:70
+msgid "Release note location:"
+msgstr "Release note location:"
+
+#: templates/Jan/content.html:72
+msgid "Baselines:"
+msgstr "Baselines:"
+
+#: templates/Jan/content.html:77
+msgid "Externals:"
+msgstr "Externals:"
+
+#: templates/Jan/content.html:88 templates/Jan/index.html:123
+msgid "Site generated"
+msgstr "Site generated"
+
+#: templates/Jan/index.html:29
+msgid "history of deliveries"
+msgstr "history of deliveries"
+
+#: templates/Jan/index.html:52
+msgid "System message placeholder"
+msgstr "System message placeholder"
+
+#: templates/Jan/index.html:66
+msgid "status"
+msgstr "status"
+
+#: templates/Jan/index.html:68
+msgid "system component"
+msgstr "system component"
+
+#: templates/Jan/index.html:71
+msgid "branch"
+msgstr "branch"
+
+#: templates/Jan/index.html:75
+msgid "delivery time"
+msgstr "delivery time"
+
+#: templates/Jan/index.html:78
+msgid "content"
+msgstr "content"
+
+#: templates/Jan/index.html:81
+msgid "move up"
+msgstr "move up"
+
+#: templates/Jan/index.html:84
+msgid "move down"
+msgstr "move down"

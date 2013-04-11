@@ -1,0 +1,590 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-02-20 08:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: picard/ContactCenter/forms.py:15
+msgid "Informacje gospodarcze"
+msgstr ""
+
+#: picard/ContactCenter/forms.py:16
+msgid "Informacje prawne"
+msgstr ""
+
+#: picard/ContactCenter/forms.py:17
+msgid "Dane statystyczne"
+msgstr ""
+
+#: picard/ContactCenter/forms.py:18
+msgid "Integracja europejska"
+msgstr ""
+
+#: picard/ContactCenter/forms.py:19
+msgid "Inne"
+msgstr ""
+
+#: picard/ContactCenter/forms.py:35
+msgid "Tytuł czasopisma, rok, vol, nr, strony"
+msgstr ""
+
+#: picard/ContactCenter/forms.py:48
+msgid "ISBN"
+msgstr ""
+
+#: picard/ContactCenter/forms.py:49
+msgid "ISSN"
+msgstr ""
+
+#: picard/ContactCenter/forms.py:53
+msgid "Inne informacje np. /przeznaczenie/liczba egzemplarzy"
+msgstr ""
+
+#: picard/ContactCenter/forms.py:58 picard/ContactCenter/forms.py:66
+msgid "Wpisz temat wiadomości"
+msgstr ""
+
+#: picard/ContactCenter/forms.py:74
+msgid "Tytuł ksiązki"
+msgstr ""
+
+#: picard/ContactCenter/forms.py:75
+msgid "Autor/-rzy lub Redaktor/-rzy (kolejność alfabetyczna)"
+msgstr ""
+
+#: picard/ContactCenter/forms.py:76 picard/ContactCenter/forms.py:86
+msgid "Miejsce wydania"
+msgstr ""
+
+#: picard/ContactCenter/forms.py:78 picard/ContactCenter/forms.py:88
+#: picard/ContactCenter/forms.py:97
+msgid "Uwagi (np. dane o konferencji/adres URL publikacji/inne"
+msgstr ""
+
+#: picard/ContactCenter/forms.py:83 picard/ContactCenter/forms.py:93
+msgid "Autor/-rzy (kolejność alfabetyczna)"
+msgstr ""
+
+#: picard/ContactCenter/forms.py:84 picard/ContactCenter/forms.py:94
+msgid "Tytuł artykułu"
+msgstr ""
+
+#: picard/ContactCenter/forms.py:85
+msgid "Tytuł całości (książki)"
+msgstr ""
+
+#: picard/ContactCenter/forms.py:87
+msgid "Rok wydania"
+msgstr ""
+
+#: picard/ContactCenter/forms.py:95
+msgid "Tytuł czasopisma"
+msgstr ""
+
+#: picard/ContactCenter/forms.py:96
+msgid "Rok wydania/numer/zeszyt/rocznik"
+msgstr ""
+
+#: picard/ContactCenter/views.py:37
+msgid "Zamów książke"
+msgstr ""
+
+#: picard/ContactCenter/views.py:52
+msgid "Zamów artykuł"
+msgstr ""
+
+#: picard/ContactCenter/views.py:67
+msgid "Zaproponuj książkę do zbiorów"
+msgstr ""
+
+#: picard/ContactCenter/views.py:82
+msgid "Zapytaj bibliotekarza"
+msgstr ""
+
+#: picard/ContactCenter/views.py:97
+msgid "Informacja ekonomiczna"
+msgstr ""
+
+#: picard/ContactCenter/views.py:112
+msgid "Uwagi i opinie"
+msgstr ""
+
+#: picard/ContactCenter/views.py:127
+msgid "Książka"
+msgstr ""
+
+#: picard/ContactCenter/views.py:142
+msgid "Artykuł w książce"
+msgstr ""
+
+#: picard/ContactCenter/views.py:157
+msgid "Artykuł w czasopiśmie"
+msgstr ""
+
+#: templates/ContactCenter/base.html:6 templates/ContactCenter/base.html:49
+#: templates/accounts/base.html:37
+msgid "DCINiE Self Service and Contact Center Application"
+msgstr "DCINiE Samoobsługa i Centrum Kontaktu"
+
+#: templates/ContactCenter/base.html:30 templates/ContactCenter/base.html:55
+#: templates/accounts/base.html:38
+msgid "About"
+msgstr "O aplikacji"
+
+#: templates/ContactCenter/base.html:33
+msgid ""
+"Application ensures warm relation with Customers. Works also for mobile "
+"phones and has multi-language support. If you like it you may buy it. Drop "
+"an email to "
+msgstr ""
+"Aplikacja zapewnia ciepłe relacje z Klientami. Działa również na telefonach "
+"komórkowych i obsługuje wielojęzykowość. Jeśli Ci się podoba możesz ją "
+"kupić. Napisz email do "
+
+#: templates/ContactCenter/base.html:33
+msgid "webmaster"
+msgstr "webmaster"
+
+#: templates/ContactCenter/base.html:52 templates/accounts/base.html:36
+msgid "Home"
+msgstr "Początek"
+
+#: templates/ContactCenter/base.html:53 templates/accounts/base.html:6
+#: templates/accounts/base.html.py:33
+msgid "DCINiE User Account Service"
+msgstr "DCINiE Obługa konta Użytkownika"
+
+#: templates/ContactCenter/base.html:56 templates/accounts/base.html:39
+msgid "Contact"
+msgstr "Kontakt"
+
+#: templates/ContactCenter/base.html:57 templates/accounts/base.html:40
+#: templates/accounts/logout.html:5 templates/accounts/navigation.html:8
+msgid "Logout"
+msgstr "Wyloguj"
+
+#: templates/ContactCenter/form_snippet.html:14 templates/Jan/strategy.html:27
+#: templates/accounts/password_change.html:20
+#: templates/accounts/profile.html:28 templates/accounts/profile.html.py:89
+#: templates/accounts/register.html:20
+msgid "Save"
+msgstr "Zachowaj"
+
+#: templates/ContactCenter/index.html:15
+msgid "Date"
+msgstr "Data"
+
+#: templates/ContactCenter/index.html:15
+msgid "From"
+msgstr "Od"
+
+#: templates/ContactCenter/index.html:15
+msgid "Importance"
+msgstr "Ważność"
+
+#: templates/ContactCenter/navigation.html:6
+#: templates/accounts/navigation.html:6 templates/accounts/profile.html:13
+msgid "About me"
+msgstr "O mnie"
+
+#: templates/ContactCenter/navigation.html:7
+msgid "Mailbox"
+msgstr "Skrzynka pocztowa"
+
+#: templates/ContactCenter/navigation.html:8
+msgid "Reserve private room"
+msgstr "Zarezerwuj pokój prywatny"
+
+#: templates/ContactCenter/navigation.html:12
+msgid "Report publication of ..."
+msgstr "Zgłoś publikację ..."
+
+#: templates/ContactCenter/navigation.html:14
+msgid "Book"
+msgstr "Ksiązka"
+
+#: templates/ContactCenter/navigation.html:15
+msgid "Article in journal"
+msgstr "Artykuł w czasopiśmie"
+
+#: templates/ContactCenter/navigation.html:16
+msgid "Article in book"
+msgstr "Artykuł w książce"
+
+#: templates/ContactCenter/navigation.html:21
+msgid "Orders"
+msgstr "Zamówienia"
+
+#: templates/ContactCenter/navigation.html:23
+msgid "Order a book"
+msgstr "Zamów książkę"
+
+#: templates/ContactCenter/navigation.html:24
+msgid "Order a journal"
+msgstr "Zamów czasopismo"
+
+#: templates/ContactCenter/navigation.html:29
+msgid "Contact with librarians"
+msgstr "Kontakt z bibliotekarzami"
+
+#: templates/ContactCenter/navigation.html:31
+msgid "Ask a question"
+msgstr "Zadaj pytanie"
+
+#: templates/ContactCenter/navigation.html:32
+msgid "Remarks and opinions"
+msgstr "Uwagi i opinie"
+
+#: templates/ContactCenter/navigation.html:33
+msgid "Propose a book to buy"
+msgstr "Zaproponuj książkę do kupienia"
+
+#: templates/ContactCenter/navigation.html:38
+msgid "European information"
+msgstr "Informacja europejska"
+
+#: templates/ContactCenter/navigation.html:40
+msgid "Order a book to reading room"
+msgstr "Zamów książkę do czytelni"
+
+#: templates/ContactCenter/navigation.html:41
+msgid "Request information"
+msgstr "Poproś o informację"
+
+#: templates/ContactCenter.0/form.html:20
+msgid "Wyslij"
+msgstr "Wyślij"
+
+#: templates/ContactCenter.0/thanksForYourMail.html:16
+msgid "Wróć"
+msgstr "Wróć"
+
+#: templates/Jan/base.html:42
+msgid "log in"
+msgstr "zaloguj"
+
+#: templates/Jan/base.html:91
+msgid "Site generated"
+msgstr "Strona wygenerowana"
+
+#: templates/Jan/content.html:37 templates/Jan/history_content.html:37
+#: templates/Jan/strategy.html:12
+msgid "System message"
+msgstr "Miejsce na komunikat systemowy"
+
+#: templates/Jan/content.html:47
+msgid "Fault corrections / new features information for compilation:"
+msgstr "Poprawione błędy / zaimplementowane zmiany w bieżącej kompilacji:"
+
+#: templates/Jan/content.html:48
+#, fuzzy
+msgid "Log location:"
+msgstr "Adres repozytorium kodu źródłowego:"
+
+#: templates/Jan/content.html:49
+msgid "Log range:"
+msgstr ""
+
+#: templates/Jan/content.html:52 templates/Jan/faults.html:12
+#: templates/Jan/history_content.html:53
+msgid "Pronto Id:"
+msgstr "Identyfikator błędu/zmiany:"
+
+#: templates/Jan/content.html:53 templates/Jan/faults.html:13
+#: templates/Jan/history_content.html:54
+msgid "Pronto description:"
+msgstr "Opis błędu/zmiany:"
+
+#: templates/Jan/content.html:54 templates/Jan/faults.html:14
+#: templates/Jan/history_content.html:55
+msgid "Responsible person:"
+msgstr "Osoba odpowiedzialna:"
+
+#: templates/Jan/content.html:55 templates/Jan/faults.html:15
+#: templates/Jan/history_content.html:56
+msgid "Is partial correction from developer p.o.v:"
+msgstr "Korekcja/zmiana częściowa z punktu widzenia programisty:"
+
+#: templates/Jan/content.html:56 templates/Jan/faults.html:16
+#: templates/Jan/history_content.html:57
+msgid "Change set revision"
+msgstr "Rewizja kodu źródłowego zawierająca zmianę:"
+
+#: templates/Jan/content.html:61
+msgid "Fault information for delivery: (since latest delivered version)"
+msgstr ""
+"Informacje o błędach/zaimplementowanych zmianach dla bieżącego kandydata do "
+"wydania: (od ostatnio dostarczonej wersji)"
+
+#: templates/Jan/content.html:65
+msgid "Show faults between"
+msgstr "Pokaż zmiany pomiędzy"
+
+#: templates/Jan/content.html:70 templates/Jan/history_content.html:64
+msgid "Delivery information:"
+msgstr "Informacja o dostarczeniu:"
+
+#: templates/Jan/content.html:73 templates/Jan/history_content.html:68
+msgid "Component:"
+msgstr "Nazwa komponentu"
+
+#: templates/Jan/content.html:74 templates/Jan/history_content.html:69
+msgid "Branch name:"
+msgstr "Nazwa gałęzi kodu:"
+
+#: templates/Jan/content.html:75
+msgid "Lastest delivered revision:"
+msgstr "Ostatnio dostarczona rewizja:"
+
+#: templates/Jan/content.html:76
+msgid "Will be delivered from location:"
+msgstr "Zostanie dostarczona z lokacji:"
+
+#: templates/Jan/content.html:82
+msgid "Will be delivered to location(s):"
+msgstr "Zostanie dostarczona do lokacji:"
+
+#: templates/Jan/content.html:89
+msgid "SCM information:"
+msgstr "Informacje SCM:"
+
+#: templates/Jan/content.html:92 templates/Jan/history_content.html:71
+msgid "System:"
+msgstr "System:"
+
+#: templates/Jan/content.html:93 templates/Jan/history_content.html:72
+msgid "Name:"
+msgstr "Nazwa wydania:"
+
+#: templates/Jan/content.html:94 templates/Jan/history_content.html:73
+msgid "Compilation date:"
+msgstr "Data kompilacji:"
+
+#: templates/Jan/content.html:95 templates/Jan/history_content.html:74
+msgid "Source code location:"
+msgstr "Adres repozytorium kodu źródłowego:"
+
+#: templates/Jan/content.html:96 templates/Jan/history_content.html:75
+msgid "Source code revision:"
+msgstr "Rewizja kodu źródłowego:"
+
+#: templates/Jan/content.html:97
+msgid "Release note location:"
+msgstr "Położenie noty do wydania:"
+
+#: templates/Jan/content.html:99 templates/Jan/history_content.html:94
+msgid "Baselines:"
+msgstr "Zależności:"
+
+#: templates/Jan/content.html:104 templates/Jan/history_content.html:99
+msgid "Externals:"
+msgstr "Adresy zależności / właściwość svn:externals:"
+
+#: templates/Jan/history.html:12
+msgid "queue of deliveries"
+msgstr "kolejka dostarczeń"
+
+#: templates/Jan/history.html:29 templates/Jan/index.html:29
+msgid "System message placeholder"
+msgstr "Miejsce na komunikat systemowy"
+
+#: templates/Jan/history.html:57 templates/Jan/index.html:43
+msgid "status"
+msgstr "status"
+
+#: templates/Jan/history.html:59 templates/Jan/index.html:45
+msgid "system component"
+msgstr "Nazwa komponentu"
+
+#: templates/Jan/history.html:62 templates/Jan/index.html:48
+msgid "branch"
+msgstr "gałąź kodu"
+
+#: templates/Jan/history.html:66
+msgid "delivery time"
+msgstr "czas dostarczenia"
+
+#: templates/Jan/history.html:69 templates/Jan/index.html:55
+msgid "content"
+msgstr "zawartość"
+
+#: templates/Jan/history_content.html:49
+msgid "Bugtrack information for delivery:"
+msgstr "Informacje systemu śledzenia zmian:"
+
+#: templates/Jan/history_content.html:76
+#, fuzzy
+msgid "Fault log location:"
+msgstr "Adres repozytorium kodu źródłowego:"
+
+#: templates/Jan/history_content.html:77
+msgid "Fault log range:"
+msgstr ""
+
+#: templates/Jan/history_content.html:79
+msgid "Raw release note:"
+msgstr "Surowa nota do wydania:"
+
+#: templates/Jan/history_content.html:80
+msgid "Delivered from location:"
+msgstr "Dostarczono z lokacji:"
+
+#: templates/Jan/history_content.html:86
+msgid "Delivered to location(s):"
+msgstr "Dostarczono do lokacji:"
+
+#: templates/Jan/history_content.html:104
+msgid "Compilation has been taken to below releases:"
+msgstr ""
+
+#: templates/Jan/history_content.html:108
+msgid "Show builds"
+msgstr ""
+
+#: templates/Jan/index.html:12
+msgid "history of deliveries"
+msgstr "historia dostarczeń"
+
+#: templates/Jan/index.html:52
+msgid "planned delivery time"
+msgstr "planowany czas dostarczenia"
+
+#: templates/Jan/index.html:58
+msgid "move up"
+msgstr "przesuń w górę"
+
+#: templates/Jan/index.html:61
+msgid "move down"
+msgstr "przesuń w dół"
+
+#: templates/Jan/navigation.html:6
+msgid "History of deliveries"
+msgstr "Historia dostarczeń"
+
+#: templates/Jan/navigation.html:11
+msgid "Another configuration option"
+msgstr "Kolejna opcja konfiguracji"
+
+#: templates/Jan/navigation.html:16
+msgid "Views definitions"
+msgstr "Definicje widoków"
+
+#: templates/accounts/login.html:12 templates/accounts/login.html.py:23
+#: templates/accounts/password_reset_complete.html:11
+msgid "Login"
+msgstr "Zaloguj"
+
+#: templates/accounts/login.html:14
+msgid ""
+"Your username and password didn't match or errors occured. Please try again."
+msgstr ""
+"Twoja nazwa użytkownika i hasło nie pasują do siebie lub wystąpiły inne "
+"błedy. Spróbuj ponownie."
+
+#: templates/accounts/login.html:28 templates/accounts/register.html:12
+msgid "Register"
+msgstr "Zarejestruj się"
+
+#: templates/accounts/login.html:29
+msgid "Reset password"
+msgstr "Zresetuj hasło"
+
+#: templates/accounts/logout.html:6
+msgid "Thank You for visiting us. You have been now logged out."
+msgstr "Dziękujemy za wizytę. Zostałeś wylogowany"
+
+#: templates/accounts/logout.html:8
+msgid "Login again"
+msgstr "Zaloguj się ponownie"
+
+#: templates/accounts/navigation.html:7
+#: templates/accounts/password_change_done.html:9
+msgid "Password change"
+msgstr "Zmiana hasła"
+
+#: templates/accounts/password_change_done.html:10
+msgid "Your password has been sucessfully changed"
+msgstr "Twoje hasło zostało zmienione"
+
+#: templates/accounts/password_reset.html:11
+#: templates/accounts/password_reset_complete.html:9
+#: templates/accounts/password_reset_confirm.html:12
+#: templates/accounts/password_reset_done.html:8
+msgid "Password reset"
+msgstr "Zresetuj hasło"
+
+#: templates/accounts/password_reset.html:22
+msgid "Confirm"
+msgstr "Potwierdź"
+
+#: templates/accounts/password_reset_complete.html:10
+msgid "Your password has been successfuly changed."
+msgstr "Twoje hasło zostało zmienione"
+
+#: templates/accounts/password_reset_confirm.html:14
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please request a new password reset."
+msgstr ""
+"Adres resetowania hasła jest nieważny, prawdopodobnie dlatego, że został już "
+"użyty. Proszę ponownie zresetować hasło."
+
+#: templates/accounts/password_reset_confirm.html:17
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr ""
+"Proszę dwukrotnie wprowadzić hasło, by można było zweryfikować, że zostało "
+"wpisane poprawnie"
+
+#: templates/accounts/password_reset_confirm.html:25
+msgid "Change my password"
+msgstr "Zmień moje hasło"
+
+#: templates/accounts/password_reset_done.html:9
+msgid ""
+"Verification email has been sent. You may check your email now to complete "
+"reseting your password"
+msgstr ""
+"Weryfikacyjny email został wysłany. Możesz sprawdzić swoją skrzynkę pocztową "
+"by dokończyć procedurę resetowania hasła"
+
+#: templates/accounts/profile.html:35
+msgid "username"
+msgstr "nazwa użytkownika"
+
+#: templates/accounts/profile.html:41
+msgid "first name"
+msgstr "imię"
+
+#: templates/accounts/profile.html:47
+msgid "last name"
+msgstr "nazwisko"
+
+#: templates/accounts/profile.html:53
+msgid "email"
+msgstr "email"
+
+#: templates/accounts/profile.html:59
+msgid "date joined"
+msgstr "data przyłączenia"
+
+#: templates/accounts/profile.html:65
+msgid "last login"
+msgstr "ostanie logowanie"
+
+#~ msgid "Strategy of deliveries"
+#~ msgstr "Strategia dostarczeń"

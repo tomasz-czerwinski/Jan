@@ -1,0 +1,107 @@
+{% extends "Jan/base.html" %}
+{% load i18n %}
+
+{% block navigation %}
+    {%include "Jan/navigation.html"%}
+{% endblock %}
+
+{% block history %}
+
+    <table id="history" class="pane">
+        <tr>
+            <td colspan="2" class="pane-header">{% trans "queue of deliveries" %}</td>
+        </tr>
+        {%for q in context.queue%}
+            <tr>
+                <td style="white-space: normal;" width="100%" class="pane">
+                    <a href="/Jan/content/{{q.build.id}}">{{q.build.branch.name}}</a>
+                </td>
+                <td class="pane" width="16" align="center" valign="middle">
+                {{q.release_date}} 
+                </td>
+            </tr>
+        {%endfor%}        
+    </table>
+ 
+{% endblock history %}
+
+{% block system-message %}
+   <h3> {% trans "System message placeholder" %} </h3>
+{% endblock %}
+
+{% block description %} 
+    View description 
+    
+
+    <div id="filter">
+        <form action="history" method="post">{% csrf_token %}
+            {{context.form.as_p}}
+            <input  type="submit" id="filtersubmit" value="" />
+
+
+            <a href="history" >
+            <img style="padding-bottom:7px;" width="24" height="24" src="/static/Jan/images/icons/Faenza/actions/24/edit-clear.png"></a>
+        </form>
+   </div>
+
+{% endblock description %}
+
+
+
+{% block dashboard  %}
+
+    <table id="projectstatus" class="pane bigtable" style="margin-top: 10px;">
+    <tbody>
+        <tr style="border-top: 1px;">
+            <th tooltip="status" title="status"> 
+                {% trans "status" %}   
+            <th tooltip="status" title="status"> 
+                {% trans "system component" %}   
+            </th>
+             <th tooltip="status" title="status"> 
+                {% trans "branch" %}
+            </th>
+           </th>
+             <th tooltip="status" title="status"> 
+                {% trans "delivery time" %}    
+            </th>
+             <th tooltip="status" title="status"> 
+                {% trans "content" %}
+            </th>
+       </tr>
+
+    {% for h in context.history %}
+       <tr id="{{h.place}}">
+            <td> 
+                <img width="32" height="32" src="/static/Jan/images/icons/Faenza/actions/32/lock.png"> {{q.place}}
+            <td> 
+               {{h.build.branch.component}}  
+            </td>
+            <td>
+               {{h.build.branch.name}} 
+            </td>
+            </td>
+             <td> 
+                {{h.release_date}} 
+            </td>
+            <td>
+               <a href="history_content/{{h.build.id}}">
+               <img width="32" height="32" src="/static/Jan/images/icons/Faenza/apps/32/accessories-text-editor.png"></a>
+            </td>
+        </tr>
+      {% endfor %}
+
+    </tbody>
+    </table>
+
+    <span class="step-links">
+        {% if context.history.has_previous %} <a href="?page={{ context.history.previous_page_number }}">previous</a> {% endif %}
+        <span class="current">Page {{ context.history.number }} of {{ context.history.paginator.num_pages }}.</span>
+        {% if context.history.has_next %}<a href="?page={{ context.history.next_page_number}}">next</a>{% endif %}
+    </span>
+
+{% endblock dashboard %}
+
+{% block footer %}
+{% endblock footer %}
+

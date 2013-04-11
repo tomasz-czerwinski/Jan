@@ -1,0 +1,23 @@
+{% load i18n %}
+
+
+<!--
+SVN Log: <br>
+{%for message in context.messages %}
+    {{message}} <br>
+{%endfor%}
+-->
+<table width="100%">
+<tr>
+    <th align="left">Release date:</th>
+    <th align="left">Jenkins log:</th>
+    <th align="left">Release configuration:</th>
+</tr>
+{%for build in context.builds %}
+    <tr>
+        <td>{{build.0}}</td>
+        <td><a href={{build.2}}>{{build.1}}</a></td>
+        <td><a href={{build.3}}>Configuration</a></td>
+   </tr>
+{%endfor%}
+</table>

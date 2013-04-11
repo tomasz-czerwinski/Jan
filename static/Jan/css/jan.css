@@ -1,0 +1,188 @@
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		body {
+			font: 100% normal Verdana, Helvetica, sans-serif; 
+			font-size: 11px;
+			background: #ffffff;
+		}
+
+	
+		img {
+  			vertical-align: middle;
+  			border: 0;
+		}	
+		
+		td {
+			vertical-align: top;
+		}
+
+		a:link {
+		  text-decoration: underline;
+		  color: #204A87;
+		}
+
+		a:visited {
+		  text-decoration: underline;
+		  color: #5c3566;
+		}		
+
+		
+		#main-table {
+		  padding: 0;
+		  border-collapse: collapse;
+		}
+		
+		#top-panel {
+		  margin-bottom: 3pt;
+		  height: 34px;
+		  background: url(/static/Jan/images/topbar.png) repeat-x;
+		}
+		#top-panel a {
+		  text-decoration: none;
+		}
+		
+		#main-panel {
+		  padding: 10px;
+		  padding-top: 0px;
+		}
+		
+		#side-panel {
+		  padding: 4px;
+		  width: 220px;
+		}
+		
+
+		#footer {
+  		  text-align: right;
+  		  font-size: 8pt;
+  		  margin-top: 10em;
+  		  padding: 10px;
+  		  border-top: 1px solid #bbb;
+		}
+
+
+		#login-field {
+		    vertical-align: middle;
+		    padding-right: 1em;
+		    width:1px;
+		}
+		
+		#login-field SPAN {
+		  white-space:nowrap;
+		  color: white;
+		}
+		
+		#login-field A {
+		    color: white;
+		}
+
+		#tasks {
+		  padding: 4px;
+		  border-collapse: collapse;
+		}
+
+		.task {
+		  white-space: nowrap;
+		}
+
+
+    div.dashboard {
+        width: 100%;
+        clear:both;
+    }
+
+    #projectstatus th {
+        text-align: left;
+    }
+
+    .pane  {
+        margin-top: 4px;
+        white-space: nowrap;
+    }
+    .pane td {
+        padding: 4px 4px 3px 4px;
+    }
+    
+    table.pane {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px #bbb solid;
+    }
+        table.pane > tbody > tr > td:last-child {
+        border-right: 1px #bbb solid;
+    }
+    
+    td.pane {
+        border: 1px #bbb solid;
+        padding: 3px 4px 3px 4px;
+        vertical-align: middle;
+    }
+    
+    td.pane-header {
+        border: 1px #bbb solid;
+        border-right: none;
+        border-left: none;
+        background-color: #f0f0f0;
+        font-weight: bold;
+    }
+    
+    th.pane {
+        border: 1px #bbb solid;
+        font-weight: bold;
+    }
+    
+    .bigtable tr {
+        border: 1px solid #bbb;
+        padding: 3px 4px 3px 4px;
+    }
+    
+    .bigtable tr:hover {
+        background-color: #f0f0f0;
+    }
+    
+    .bigtable th {
+    font-weight: bold;
+    border: none;
+    background-color: #f0f0f0;
+    padding: 3px 4px 3px 4px;
+    }
+    
+    .bigtable td {
+    vertical-align: middle;
+    padding: 3px 4px 3px 4px;
+    }
+
+    div#filter p {
+        display: inline;
+        padding: 0;
+        margin: 0;
+    }
+   
+    div#filter select {
+        background: transparent;
+        width: 10%;
+        padding: 0; 
+        font-size: 1em;
+        border: 1px solid #ccc;
+        height: 2em;
+    }
+/*    div#filter input {
+        background: transparent;
+        width: 5%;
+        padding: 0; 
+        font-size: 1em;
+        border: 1px solid #ccc;
+        height: 2em;
+    }
+*/
+    #filtersubmit{
+        margin: 0;
+        padding: 0;
+        width: 24px;
+        height: 24px;
+        border: none;
+        background: url("/static/Jan/images/icons/Faenza/actions/24/edit-find.png") no-repeat;
+}

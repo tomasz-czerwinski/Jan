@@ -1,0 +1,14 @@
+{% extends "Jan/base.html" %}
+{% load i18n %}
+
+{% block dashboard  %}
+
+	<h2>Delivery log:</h2>
+
+	{%for log_item in context.log %}
+
+		{{log_item}} <br>
+
+	{%endfor%}
+{% endblock dashboard  %}
+

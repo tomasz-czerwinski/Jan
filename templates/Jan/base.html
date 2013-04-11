@@ -1,0 +1,127 @@
+{% load i18n %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN "
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl" xml:lang="pl">
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="pl" />
+        <link rel="stylesheet" href="/static/Jan/css/jan.css" type="text/css" title="jan" />
+
+
+        <title>{% block title %} {% endblock title%}</title>
+        {% block script %} {% endblock script%}
+</head>
+
+
+<body>
+
+    <table id="header" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-image: url(/static/Jan/images/topbar.png);">
+        <tbody> 
+            <tr> 
+                <td id="title" width="20%" style="font-weight:bold; font-size: 2em;" > 
+                    <div id="title" style="height: 34px;">
+                        <a href="/Jan"><img alt="title" src="/static/Jan/images/title.png" /></a>
+
+                            {% block header %} 
+                            {% endblock %} 
+                    </div>
+                </td> 
+
+                <td style="vertical-align: middle; text-align: right; padding-right: 1em;">
+                    <form style="position:relative;" name="search" action="/search/" method="get">
+                    <div id="search-box-minWidth"></div>
+                    <div id="search-box-sizer"></div>
+                    <div id="searchform">
+                        <input id="search-box" name="q" value="Search"/> 
+                        <a href="."><img height="16" alt="help for search" width="16" src="/static/Jan/images/icons/Faenza/actions/16/help-about.png" /></a>
+                    </div>
+                    </form>
+                </td>
+                <td id="login-field">
+                    <span> <a style="color:inherit" href="/admin/"><b>{% trans "log in" %}</b></a></span>
+                </td>
+
+            </tr> 
+        </tbody>
+    </table>
+    <table id="maintable" width="100%" height="70%" border="0" style="background-image: url(/static/Jan/images/jan-yellow.png); background-repeat: no-repeat; background-position: bottom left;">
+        <tbody>
+            <tr>
+                <td id="side-panel" width=20%>
+                    <div id="navigation" style="min-height: 400px; height: auto !important;  height: 400px">
+                                  
+                    {% block navigation %}
+                    {% endblock navigation %}
+
+                    {% block history%}
+                    {% endblock history %}
+                    </div>
+               </td>
+                <td id="main-panel" width="80%" height="100%">
+
+                    <div id="panel">
+                    {% block panel %}
+
+                            {% block view-message %} 
+                                <div id="system-message">
+                                    {% block system-message %} {% endblock system-message %}
+                                </div>
+                                <div id="description">
+                                    {% block description %} {% endblock description %}
+                                </div>
+                            {% endblock view-message %}
+
+                            <div class="dashboard">
+                                {% block dashboard  %}
+                                {% endblock dashboard %}
+                            </div>
+
+                    {% endblock panel %}
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table width="100%">
+        <tbody>
+            <tr>
+                <td id="footer">
+                        <span style="padding-right: 2em; color: gray;">{% trans "Site generated" %} {{context.now}}</span>
+                        <a href="mailto:tomasz.czerwinski@nsn.com">{{context.program_version}}</a>
+                        {% block footer %}
+                        {% endblock footer%}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+<script type="text/javascript">
+var uservoiceOptions = {
+  /* required */
+  key: 'czerwinski',
+  host: 'czerwinski.uservoice.com', 
+  forum: '50939',
+  showTab: true,  
+  /* optional */
+  alignment: 'right',
+  background_color:'#660066', 
+  text_color: 'white',
+  hover_color: '#f00',
+  lang: 'en'
+};
+
+function _loadUserVoice() {
+  var s = document.createElement('script');
+  s.setAttribute('type', 'text/javascript');
+  s.setAttribute('src', ("https:" == document.location.protocol ? "https://" : "http://") + "cdn.uservoice.com/javascripts/widgets/tab.js");
+  document.getElementsByTagName('head')[0].appendChild(s);
+}
+loadSuper = window.onload;
+window.onload = (typeof window.onload != 'function') ? _loadUserVoice : function() { _loadSuper(); _loadUserVoice(); }; 
+</script>
+
+</body>
+</html>       
